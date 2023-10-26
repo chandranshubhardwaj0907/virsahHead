@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .boddy {
@@ -11,6 +12,7 @@
   padding: 0px;
   font-family: "Roboto Mono", monospace;
   background-image: url('https://imagizer.imageshack.com/img923/2648/0Hkqon.jpg'); 
+  background-repeat: repeat;
   background-size:100% auto;
   color: #fff;
 }
@@ -855,7 +857,9 @@ p + p {
   }
 
 }
-
+i{
+  height: 20px;
+}
 @media screen and (max-width: 32rem){
   .carddesign h1{
 
