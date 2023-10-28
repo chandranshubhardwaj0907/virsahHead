@@ -847,70 +847,71 @@ p + p {
 
 
 /* Responsive  */
-@media screen and (max-width: 64rem){
-	.carddesign{
-
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: row;
+@media screen and (max-width: 64rem) {
+  .carddesign {
+    /* No change in styles */
   }
-  .card{
 
-    width: 250px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 48rem){
-  .carddesign{
-
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: row;
-  }
-  .card{
-
+  .card {
     width: 200px;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-}
-i{
-  height: 20px;
-}
-@media screen and (max-width: 32rem){
-  .carddesign h1{
-
-    font-size: 20px;
-  }
-  .carddesign{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .card{
-
-    width: calc(50%-20px);
-    height: 200px;
-    overflow: hidden;
-  }
-  .cardover{
-
-    display: flex;
-    justify-content: center;
-    flex-direction:row ;
-    flex-wrap: wrap;
-    overflow: hidden;
+    /* No change in other styles */
   }
   
+  .DepartmentHeading {
+    font-size: 1.2rem; /* Adjust the font size */
+  }
+  .card .card-info h1
+  {
+    font-size: medium;
+  }
+
 }
 
+/* Media Query 2: 48rem (768px) and below */
+@media screen and (max-width: 48rem) {
+  .carddesign {
+    /* No change in styles */
+  }
+
+  .card {
+    width: 150px; /* Adjust the card width */
+    height: 250px; /* Adjust the card height */
+    /* No change in other styles */
+  }
+  
+  .DepartmentHeading {
+    font-size: 1.0rem; /* Adjust the font size */
+  }
+  .card .card-info h1
+  {
+    font-size: medium;
+  }
+}
+
+/* Media Query 3: 425px and below */
+@media screen and (max-width: 425px) {
+  .carddesign h1 {
+    font-size: 20px; /* Adjust the font size for h1 element */
+  }
+  
+  .carddesign {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    text-align: center; /* Center-align text within carddesign */
+  }
+
+  .card {
+    width: 90%; /* Adjust card width to be responsive */
+    height: 200px;
+    overflow: hidden;
+    /* No need to specify display, justify-content, flex-direction, as they are inherited */
+  }
+
+ .card .card-info h1
+  {
+    font-size: medium;
+  }
+}
 
 /* responsive  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
