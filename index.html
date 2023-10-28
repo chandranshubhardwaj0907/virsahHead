@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Open+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
  
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -59,58 +60,50 @@
     <div class="DepartmentHeading" style="text-align: center; ">
       <p>General Secretary</p>
     </div>
-    <section id="main">
-      <div class="container">
-        <!-- <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i> -->
-        
-        <div class="card convenor">
-          <div class="imgBx">
-            <img src="https://imagizer.imageshack.com/img923/4076/j4brE6.jpg" alt="" />
-          </div>
-          <div class="content">
-            <div class="contentBx">
-              <h3>Parampreet Kaur <br /><span>General Secretary</span></h3>
-            </div>
-            <ul class="sci">
-              <li style="--i: 1">
-                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              </li>
-              <li style="--i: 2">
-                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-              </li>
-              <li style="--i: 3">
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- card  -->
-
-
-        <div class="card content">
-          <div class="imgBx">
-            <img src="https://imagizer.imageshack.com/img923/4857/w2VwvJ.jpg" alt="" />
-          </div>
-          <div class="content">
-            <div class="contentBx">
-              <h3>Gurpratap Singh<br /><span>General Secretary</span></h3>
-            </div>
-            <ul class="sci">
-              <li style="--i: 1">
-                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              </li>
-              <li style="--i: 2">
-                <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-              </li>
-              <li style="--i: 3">
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
+  
+<section style="display: flex; align-items: center; justify-content: center; width: 100%; max-height: max-content;
+flex-direction: row; gap: 300px; overflow: hidden;">
+  <article class="card1">
+    <img
+      class="card__background"
+      src="https://imagizer.imageshack.com/img923/4076/j4brE6.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Gurpratap Singh</h2>
+        <p class="card__description">
+          <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i>
+          <i class="fa-brands fa-instagram-infa-1.5x" style="color: #3a7cee;"></i>
+          <i class="fa-brands fa-facebook-infa-1.5x" style="color: #3a7cee;"></i>
+        </p>
       </div>
-    </section>
+      
+    </div>
+  </article>
+  <article class="card1">
+    <img
+      class="card__background"
+      src="https://imagizer.imageshack.com/img923/4076/j4brE6.jpg"
+      alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+      width="1920"
+      height="2193"
+    />
+    <div class="card__content | flow">
+      <div class="card__content--container | flow">
+        <h2 class="card__title">Parampreet Kaur</h2>
+        <p class="card__description">
+          <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i>
+          <i class="fa-brands fa-instagram-infa-1.5x" style="color: #3a7cee;"></i>
+          <i class="fa-brands fa-facebook-infa-1.5x" style="color: #3a7cee;"></i>
+        </p>
+      </div>
+     
+    </div>
+  </article>
+</section>
 
 
 
@@ -134,22 +127,27 @@
           <card data-image="https://imagizer.imageshack.com/img923/4076/j4brE6.jpg" loading="lazy">
             <h1 slot="header">Gagan Goyal</h1>
             <br />
-            <p slot="content">Convenor</p>
+         
+              <p slot="content">Convenor</p>
+              <div id='facebook-icon'></div>
+              <!-- <p slot="content">hey is teh ihihkrrgg</p>
+            -->
+            
 
             <ul slot="content" class="social-links">
               <ul style="--i: 1; margin-right: 10px">
                 <a href="https://instagram.com/gagangoyal2003?igshid=YmMyMTA2M2Y;">
-                 <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i>
+                 <i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i>
                 </a>
               </ul>
               <ul style="--i: 2; margin-right: 10px">
                 <a href="https://github.com/GaganGoyal2003">
-                   <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i>
+                   <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i>
                 </a>
               </ul>
               <ul style="--i: 3; margin-right: 10px">
                 <a href="https://www.linkedin.com/in/gagan-goyal-48a077253">
-                  <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i>
+                  <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i>
                 </a>
               </ul>
             </ul>
@@ -172,12 +170,12 @@
               <ul slot="content" class="social-links">
                 <ul style="--i: 1; margin-right: 10px">
                   <a href="https://www.instagram.com/Kirtveer_kharoud/">
-                   <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i>
+                   <i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i>
                   </a>
                 </ul>
                 <ul style="--i: 3; margin-right: 10px">
                   <a href="https://www.linkedin.com/in/kirtveer-kaur-kharoud-992ba3212">
-                    <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i>
+                    <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i>
                   </a>
                 </ul>
               </ul>
@@ -188,7 +186,7 @@
               <ul slot="content" class="social-links">
                 <ul style="--i: 1; margin-right: 10px">
                   <a href="https://www.instagram.com/Noor.kaur230/">
-                   <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i>
+                   <i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i>
                   </a>
                 </ul>
               </ul>
@@ -218,12 +216,12 @@
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
                   <a href="https://www.instagram.com/chandan_.123/">
-                   <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i>
+                   <i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i>
                   </a>
                 </ul>
                 <ul style="--i: 2">
                   <a href="https://github.com/Chandankawatra123">
-                     <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i>
+                     <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i>
                   </a>
                 </ul>
               </ul>
@@ -234,17 +232,17 @@
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
                   <a href="https://www.instagram.com/manvirkaur_19/">
-                   <i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i>
+                   <i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i>
                   </a>
                 </ul>
                 <ul style="--i: 2">
                   <a href="https://github.com/manvir19">
-                     <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i>
+                     <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i>
                   </a>
                 </ul>
                 <ul style="--i: 3">
                   <a href="https://www.linkedin.com/in/manvir-kaur-3a5a4b232">
-                    <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i>
+                    <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i>
                   </a>
                 </ul>
               </ul>
@@ -273,13 +271,13 @@
               <p slot="content">Creativity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="http://instagram.com/anjaniimohil"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="http://instagram.com/anjaniimohil"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="https://github.com/anjaanii"> <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="https://github.com/anjaanii"> <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/anjanii-mohil-38280a227/"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/anjanii-mohil-38280a227/"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -288,13 +286,13 @@
               <p slot="content">Creativity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"> <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"> <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -303,13 +301,13 @@
               <p slot="content">Creativity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"> <i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"> <i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -318,7 +316,7 @@
               <p slot="content">Creativity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/_paras_toor/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/_paras_toor/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -346,13 +344,13 @@
               <p slot="content">Cultural</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -361,13 +359,13 @@
               <p slot="content">Cultural</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://instagram.com/iam_aasthaverma"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://instagram.com/iam_aasthaverma"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="https://github.com/vermaaastha"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="https://github.com/vermaaastha"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://linkedin.com/in/aastha-verma"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://linkedin.com/in/aastha-verma"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -377,13 +375,13 @@
               <p slot="content">Cultural</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -410,13 +408,13 @@
               <p slot="content">Design</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://instagram.com/palak__.garg?igshid=NmQ2ZmYxZjA="><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://instagram.com/palak__.garg?igshid=NmQ2ZmYxZjA="><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="https://github.com/palakga-rg"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="https://github.com/palakga-rg"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/palak-garg-5862a3223/"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/palak-garg-5862a3223/"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -426,13 +424,13 @@
               <p slot="content">Design</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -457,13 +455,13 @@
               <p slot="content">Media</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://instagram.com/ashman_423?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://instagram.com/ashman_423?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="https://github.com/AshmanMusaafir"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="https://github.com/AshmanMusaafir"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/ashman-singh-a9a613226"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/ashman-singh-a9a613226"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -472,10 +470,10 @@
               <p slot="content">Media</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/devgan2003/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/devgan2003/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/pushkal-devgan-74a2501b7"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/pushkal-devgan-74a2501b7"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -501,13 +499,13 @@
               <p slot="content">Discipline</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -516,13 +514,13 @@
               <p slot="content">Discipline</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/divyajotsapra/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/divyajotsapra/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="https://github.com/Divyajot70"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="https://github.com/Divyajot70"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/divyajot-sapra"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/divyajot-sapra"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -531,13 +529,13 @@
               <p slot="content">Discipline</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -564,10 +562,10 @@
               <p slot="content">Documentation</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://instagram.com/iam_ps?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://instagram.com/iam_ps?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/pradeepsinghal"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/pradeepsinghal"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -594,13 +592,13 @@
               <p slot="content">Finance</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -609,13 +607,13 @@
               <p slot="content">Finance</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -642,10 +640,10 @@
               <p slot="content">Gurpurab</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/gurpreet_singh_2021"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/gurpreet_singh_2021"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/gurpreet-singh-b89088253"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/gurpreet-singh-b89088253"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -654,10 +652,10 @@
               <p slot="content">Gurpurab</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
                   <a href="#"><i class="fa fa-linkedin" aria-hidden="true"
@@ -688,10 +686,10 @@
               <p slot="content">Hospitality</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/bowneet_pal_singh/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/bowneet_pal_singh/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/bowneet-pal-singh-554491250"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/bowneet-pal-singh-554491250"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -700,13 +698,13 @@
               <p slot="content">Hospitality</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -733,13 +731,13 @@
               <p slot="content">Marketing</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -748,13 +746,13 @@
               <p slot="content">Marketing</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -763,13 +761,13 @@
               <p slot="content">Marketing</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -797,10 +795,10 @@
               <p slot="content">Publicity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/sarab03_/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/sarab03_/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="https://www.linkedin.com/in/sarabdeep-singh-266984217"> <i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="https://www.linkedin.com/in/sarabdeep-singh-266984217"> <i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -809,13 +807,13 @@
               <p slot="content">Publicity</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -842,13 +840,13 @@
               <p slot="content">Public Relations</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -857,13 +855,13 @@
               <p slot="content">Public Relations</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -889,7 +887,7 @@
               <p slot="content">Logistics</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="https://www.instagram.com/amiteshwar.51/"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="https://www.instagram.com/amiteshwar.51/"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
               </ul>
             </card>
@@ -898,13 +896,13 @@
               <p slot="content">Logistics</p>
               <ul slot="content" class="social-links">
                 <ul style="--i: 1">
-                  <a href="#"><i class="fa-brands fa-instagram fa-xs" style=" color: #ed3585;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagramfa-1.5x" style=" color: #ed3585;"></i></a>
                 </ul>
                 <ul style="--i: 2">
-                  <a href="#"><i class="fa-brands fa-github fa-xs" style=" color: #1565ef;"></i></a>
+                  <a href="#"><i class="fa-brands fa-githubfa-1.5x" style=" color: #1565ef;"></i></a>
                 </ul>
                 <ul style="--i: 3">
-                  <a href="#"><i class="fa-brands fa-linkedin-in fa-xs" style="color: #3a7cee;"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-infa-1.5x" style="color: #3a7cee;"></i></a>
                 </ul>
               </ul>
             </card>
